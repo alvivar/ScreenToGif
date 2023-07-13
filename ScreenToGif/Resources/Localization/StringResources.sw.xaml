@@ -1,4 +1,4 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:s="clr-namespace:System;assembly=mscorlib"
                     xml:space="preserve">
@@ -99,7 +99,7 @@
     <s:String x:Key="S.Command.KeyStrokes">Huingiza vitufe vilivyobonyezwa wakati wa kurekodi</s:String>
     <s:String x:Key="S.Command.FreeDrawing">Chora umbizo huru</s:String>
     <s:String x:Key="S.Command.Shapes">Ongeza maumbo</s:String>
-    <s:String x:Key="S.Command.MouseClicks">Mbofyo wa kipanya:</s:String>
+    <s:String x:Key="S.Command.MouseEvents">Mbofyo wa kipanya:</s:String>
     <s:String x:Key="S.Command.Watermark">Teua picha na ongeza kama taswira fifi</s:String>
     <s:String x:Key="S.Command.Border">Ongeza boda</s:String>
     <s:String x:Key="S.Command.Shadow">Ongeza kivuli kunjuzi</s:String>
@@ -132,7 +132,7 @@
     <s:String x:Key="S.StartUp.Editor">Kihariri</s:String>
     <s:String x:Key="S.StartUp.Editor.Tooltip">Inafungua kidirisha cha kihariri, sehemu kati ya app hii, unapoweza anza na kuhariri rekodi mpya.</s:String>
     <s:String x:Key="S.StartUp.Options">Chaguo</s:String>
-    <s:String x:Key="S.StartUp.NewRelease">Toleo jipya linapatikana • {0}</s:String>
+    <s:String x:Key="S.StartUp.NewRelease">Toleo jipya linapatikana</s:String>
     <s:String x:Key="S.StartUp.NewRelease.Tooltip">Inapakua toleo la mwisho la ScreenToGif</s:String>
 
     <!--Updater-->
@@ -418,27 +418,27 @@
     <s:String x:Key="S.Options.Upload.Proxy.Password">Nywila:</s:String>
     <s:String x:Key="S.Options.Upload.Get">Pata tokeni ya OAuth</s:String>
     <s:String x:Key="S.Options.Upload.PasteToken">Bandika tokeni ya udhibitishaji hapa</s:String>
-    <s:String x:Key="S.Options.Upload.Authorize">Idhinisha</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Authorize">Idhinisha</s:String>
     <s:String x:Key="S.Options.Upload.Refresh">Onyesha upya</s:String>
     <s:String x:Key="S.Options.Upload.Clear">Futa</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Anonymous">Imgur (kisirisiri)</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Direct">Tumia viungo vya moja-kwa-moja.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Gifv">Pata viungu vya Gifv badala ya Gif</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.ToAlbum">Pakia gifs hadi albamu teule.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Album">Albamu</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.AskMe">Niulize kabla ya kupakia.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Auth.NotPossible">Haikuwezekana kufungua ukurasa ili kupata token ya udhibitishaji ya Imgure</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Auth.Missing">Ili kuidhinisha app hii, unahitaji token ya uidhinishaji.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Auth.Completed">Uidhishaji wa Imgur umekamilika.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Auth.Error">Uidhishaji wa Imgur haukufaulu. Jaribu tena baada ya sekunde chache, au tafuta tokeni mpya.</s:String>
-    <!--<s:String x:Key="S.Options.Upload.Imgur.Auth.Failed.Header">It was not possible to authorize the app</s:String>-->
-    <!--<s:String x:Key="S.Options.Upload.Imgur.Auth.Failed.Message">Check if you provided the correct token and if you have an internet connection.</s:String>-->
-    <s:String x:Key="S.Options.Upload.Imgur.Refresh.None">Ili kupakia upya uidhinishaji wa app hii, unahitaji kwanza kumaliza mchakato wa uidhinishaji.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.NotAuthorized">Haijaidhinishwa</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Expired">Uidhinishaji uliisha muda mnamo {0}</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Valid">Uidhinishaji ni halisi hadi {0}</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Removed">Uidhishaji wa Imgur umeondolewa.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Error.AlbumLoad">Upakiaji wa orodha la albamu hakukuwezekana.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.Anonymous">Imgur (kisirisiri)</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Direct">Tumia viungo vya moja-kwa-moja.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.Gifv">Pata viungu vya Gifv badala ya Gif</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.ToAlbum">Pakia gifs hadi albamu teule.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.Album">Albamu</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.AskMe">Niulize kabla ya kupakia.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.Auth.NotPossible">Haikuwezekana kufungua ukurasa ili kupata token ya udhibitishaji ya Imgure</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Warning.Token">Ili kuidhinisha app hii, unahitaji token ya uidhinishaji.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.Auth.Completed">Uidhishaji wa Imgur umekamilika.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.Auth.Error">Uidhishaji wa Imgur haukufaulu. Jaribu tena baada ya sekunde chache, au tafuta tokeni mpya.</s:String>
+    <!--<s:String x:Key="S.Options.Upload.Preset.Imgur.Auth.Failed.Header">It was not possible to authorize the app</s:String>-->
+    <!--<s:String x:Key="S.Options.Upload.Preset.Imgur.Auth.Failed.Message">Check if you provided the correct token and if you have an internet connection.</s:String>-->
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.Refresh.None">Ili kupakia upya uidhinishaji wa app hii, unahitaji kwanza kumaliza mchakato wa uidhinishaji.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Info.NotAuthorized">Haijaidhinishwa</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Info.Expired">Uidhinishaji uliisha muda mnamo {0}</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Info.Valid">Uidhinishaji ni halisi hadi {0}</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Info.Removed">Uidhishaji wa Imgur umeondolewa.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Warning.AlbumLoad">Upakiaji wa orodha la albamu hakukuwezekana.</s:String>
     <s:String x:Key="S.Options.Upload.Gfycat.Anonymous">Gfycat</s:String>
     <s:String x:Key="S.Options.Upload.Yandex.Token">Tokeni ya OAuth:</s:String>
     <s:String x:Key="S.Options.Upload.Pick.Destination">Chagua fikio</s:String>
@@ -629,7 +629,7 @@
     <s:String x:Key="S.InsertFrames.ImageSize">Ukubwa wa picha</s:String>
     <s:String x:Key="S.InsertFrames.ImagePosition">Sehemu ya picha</s:String>
     <s:String x:Key="S.InsertFrames.ResetImageSizePosition">Seti ukubwa wa picha upya&#x0d;na nafasi</s:String>
-    <s:String x:Key="S.InsertFrames.Info2">Fremu mpya zitaingizwa kwenye orodha ya sasa ya fremu kwenye nafasi:</s:String>
+    <s:String x:Key="S.InsertFrames.Info2">Fremu mpya zitaingizwa kwenye orodha&#10;ya sasa ya fremu kwenye nafasi:</s:String>
     <s:String x:Key="S.InsertFrames.Before">Kabla</s:String>
     <s:String x:Key="S.InsertFrames.After">Baada</s:String>
     <s:String x:Key="S.InsertFrames.Frame">Fremu</s:String>
@@ -755,7 +755,7 @@
     <s:String x:Key="S.Editor.Welcome.Size">Kasi ya fremu inapopunguzwa, idadi ya rangi au ya mabadiliko kati ya fremu, ukubwa unapunguka</s:String>
     <s:String x:Key="S.Editor.Welcome.Contact">Ungependa kuongea? Fungua "Chaguo > Kuhusu" kupata mbinu za mawasiliano.</s:String>
     <s:String x:Key="S.Editor.Welcome.Trouble">Unapata shida? Wasiliana nami kupitia zana ya kutoa maoni</s:String>
-    <s:String x:Key="S.Editor.Welcome.NewRecorder">Ungependa kujaribu kutumia kirekodi kipya?&#x0d;Enda kwa "Chaguo > Programu-tumizi" kuiwezesha</s:String>
+    <s:String x:Key="S.Editor.Welcome.NewRecorder">Ungependa kujaribu kutumia kirekodi kipya?&#x0d;Enda kwa "Chaguo > Kirekodi" kuiwezesha</s:String>
     
     <!--Editor • File tab • New-->
     <s:String x:Key="S.Editor.File.New.Recording">Inarekodi</s:String>
@@ -1145,7 +1145,7 @@
     <s:String x:Key="S.Shapes.Fill">Jaza</s:String>
 
     <!--Editor • Mouse clicks-->
-    <s:String x:Key="S.MouseClicks">Mibofyo ya kipanya</s:String>
+    <s:String x:Key="S.MouseEvents">Mibofyo ya kipanya</s:String>
     <s:String x:Key="S.MouseClicks.Warning.None">Hakuna mbofyo wa kipanya uliogunduliwa kwa mradi wako.</s:String>
     
     <!--Editor • Watermark-->
@@ -1271,7 +1271,7 @@
     <!--<s:String x:Key="S.SaveAs.GifOptions.GlobalColorTable">Use a global color table.</s:String>-->
     <!--<s:String x:Key="S.SaveAs.GifOptions.GlobalColorTable.Info">May reduce the quality and/or size of the gif.</s:String>-->
     <s:String x:Key="S.SaveAs.GifOptions.Loop">Rejeleza:</s:String>
-    <s:String x:Key="S.SaveAs.GifOptions.LoopedGif">Gif iliyorejelezwa.</s:String>
+    <s:String x:Key="S.SaveAs.GifOptions.Looped">Gif iliyorejelezwa.</s:String>
     <s:String x:Key="S.SaveAs.GifOptions.RepeatForever">Rudia milele.</s:String>
     <s:String x:Key="S.SaveAs.GifOptions.RepeatCount">Rudia hesabu.</s:String>
     <!--<s:String x:Key="S.SaveAs.GifOptions.Transparency.Enable">Enable transparency.</s:String>-->
@@ -1298,9 +1298,9 @@
     <s:String x:Key="S.SaveAs.ImageOptions.Zip">Zip picha</s:String>
     <s:String x:Key="S.SaveAs.PsdOptions">Chaguo za PSD</s:String>
     <s:String x:Key="S.SaveAs.PsdOptions.Compress">Finyaza picha</s:String>
-    <s:String x:Key="S.SaveAs.PsdOptions.Compress.Tooltip">Finyaza picha ukitumia algoriti ya RLE</s:String>
+    <s:String x:Key="S.SaveAs.PsdOptions.Compress.Info">Finyaza picha ukitumia algoriti ya RLE</s:String>
     <s:String x:Key="S.SaveAs.PsdOptions.Timeline">Hifadhi mfululizo wa data.</s:String>
-    <s:String x:Key="S.SaveAs.PsdOptions.Timeline.Tooltip">Kagua upangaji saa wa fremu, sio tu fremu pekee</s:String>
+    <s:String x:Key="S.SaveAs.PsdOptions.Timeline.Info">Kagua upangaji saa wa fremu, sio tu fremu pekee</s:String>
     <s:String x:Key="S.SaveAs.ProjectOptions">Chaguo za kupangama</s:String>
     
     <s:String x:Key="S.SaveAs.Extras">Ziada:</s:String>
@@ -1363,9 +1363,9 @@
     <s:String x:Key="S.SaveAs.Warning.Canceled">Operesheni ilighairiwa.</s:String>
     
     <!--SaveAs • Export-->
-    <s:String x:Key="S.SaveAs.Frames.Confirmation.Title">Kagua fremu</s:String>
-    <s:String x:Key="S.SaveAs.Frames.Confirmation.Instruction">Una uhakika unataka kuhamisha fremu?</s:String>
-    <s:String x:Key="S.SaveAs.Frames.Confirmation.Message">Kitendo hiki kitahamisha fremu {0} moja-kwa-moja hadi folda teuzi.</s:String>
+    <s:String x:Key="S.SaveAs.Dialogs.Multiple.Title">Kagua fremu</s:String>
+    <s:String x:Key="S.SaveAs.Dialogs.Multiple.Instruction">Una uhakika unataka kuhamisha fremu?</s:String>
+    <s:String x:Key="S.SaveAs.Dialogs.Multiple.Message">Kitendo hiki kitahamisha fremu {0} moja-kwa-moja hadi folda teuzi.</s:String>
     
     <!--Feedback-->
     <s:String x:Key="S.Feedback.Feedback">Maoni</s:String>

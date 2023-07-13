@@ -1,4 +1,4 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:s="clr-namespace:System;assembly=mscorlib"
                     xml:space="preserve">
@@ -99,7 +99,7 @@
     <s:String x:Key="S.Command.KeyStrokes">Inserta las teclas pulsadas durante la grabación</s:String>
     <s:String x:Key="S.Command.FreeDrawing">Dibujar formas libres</s:String>
     <s:String x:Key="S.Command.Shapes">Añadir formas</s:String>
-    <s:String x:Key="S.Command.MouseClicks">Clicks de raton</s:String>
+    <s:String x:Key="S.Command.MouseEvents">Clicks de raton</s:String>
     <s:String x:Key="S.Command.Watermark">Seleccione una imagen y añada como marca de agua</s:String>
     <s:String x:Key="S.Command.Border">Añadir bordes</s:String>
     <s:String x:Key="S.Command.Shadow">Añadir sombra paralela</s:String>
@@ -114,12 +114,12 @@
     <s:String x:Key="S.Command.Slide">Transición de diapositivas</s:String>
     <s:String x:Key="S.Command.ClearAll">Limpiar todas las codificaciones completadas</s:String>
     <s:String x:Key="S.Command.MoveUp">Mover arriba</s:String>
-    <s:String x:Key="S.Command.MoveDown">Movel abajo</s:String>
+    <s:String x:Key="S.Command.MoveDown">MoveR abajo</s:String>
     <s:String x:Key="S.Command.Add">Añadir</s:String>
     <s:String x:Key="S.Command.Open">Abrir</s:String>
     <s:String x:Key="S.Command.Edit">Editar elemento seleccionado</s:String>
     <s:String x:Key="S.Command.Save">Guardar elemento selecionado</s:String>
-    <s:String x:Key="S.Command.Remove">Eliminar Eliminar elemento seleccionado</s:String>
+    <s:String x:Key="S.Command.Remove">Eliminar elemento seleccionado</s:String>
     
     <!--StartUp-->
     <s:String x:Key="S.StartUp.Title">ScreenToGif - Inicio</s:String>
@@ -132,7 +132,7 @@
     <s:String x:Key="S.StartUp.Editor">Editor</s:String>
     <s:String x:Key="S.StartUp.Editor.Tooltip">Abrir la ventana de edición, el punto central de esta app, donde editaras tus grabaciones.</s:String>
     <s:String x:Key="S.StartUp.Options">Opciones</s:String>
-    <s:String x:Key="S.StartUp.NewRelease">Nueva versión disponible • {0}</s:String>
+    <s:String x:Key="S.StartUp.NewRelease">Nueva versión disponible</s:String>
     <s:String x:Key="S.StartUp.NewRelease.Tooltip">Descargar la última version de ScreenToGif</s:String>
 
     <!--Updater-->
@@ -418,27 +418,27 @@
     <s:String x:Key="S.Options.Upload.Proxy.Password">Contraseña:</s:String>
     <s:String x:Key="S.Options.Upload.Get">Obtener token de OAuth</s:String>
     <s:String x:Key="S.Options.Upload.PasteToken">Pegue el token de autorización aquí</s:String>
-    <s:String x:Key="S.Options.Upload.Authorize">Autorizar</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Authorize">Autorizar</s:String>
     <s:String x:Key="S.Options.Upload.Refresh">Actualizar</s:String>
     <s:String x:Key="S.Options.Upload.Clear">Limpiar</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Anonymous">Imgur (Anónimo)</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Direct">Utilice enlaces directos.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Gifv">Obtén enlaces con la extensión Gifv en lugar de Gif.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.ToAlbum">Sube gifs a un álbum seleccionado.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Album">Álbum:</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.AskMe">Pregúntame antes de subir</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Auth.NotPossible">No fue posible abrir la página para obtener el token de autorización de Imgur.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Auth.Missing">Para autorizar esta aplicación, debe proporcionar el token de autorización.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Auth.Completed">Autorización Imgur completada.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Auth.Error">Error en la autorización de Imgur. Inténtelo de nuevo en unos segundos u obtenga un nuevo token.</s:String>
-    <!--<s:String x:Key="S.Options.Upload.Imgur.Auth.Failed.Header">It was not possible to authorize the app</s:String>-->
-    <!--<s:String x:Key="S.Options.Upload.Imgur.Auth.Failed.Message">Check if you provided the correct token and if you have an internet connection.</s:String>-->
-    <s:String x:Key="S.Options.Upload.Imgur.Refresh.None">Para actualizar la autorización para esta aplicación, primero debe finalizar el proceso de autorización.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.NotAuthorized">No autorizado.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Expired">La autorización expiro hace {0}.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Valid">Autorización válida hasta {0}.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Removed">Autorización imgur eliminada.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Error.AlbumLoad">No fue posible cargar la lista de álbumes.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.Anonymous">Imgur (Anónimo)</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Direct">Utilice enlaces directos.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.Gifv">Obtén enlaces con la extensión Gifv en lugar de Gif.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.ToAlbum">Sube gifs a un álbum seleccionado.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.Album">Álbum:</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.AskMe">Pregúntame antes de subir</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.Auth.NotPossible">No fue posible abrir la página para obtener el token de autorización de Imgur.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Warning.Token">Para autorizar esta aplicación, debe proporcionar el token de autorización.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.Auth.Completed">Autorización Imgur completada.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.Auth.Error">Error en la autorización de Imgur. Inténtelo de nuevo en unos segundos u obtenga un nuevo token.</s:String>
+    <!--<s:String x:Key="S.Options.Upload.Preset.Imgur.Auth.Failed.Header">It was not possible to authorize the app</s:String>-->
+    <!--<s:String x:Key="S.Options.Upload.Preset.Imgur.Auth.Failed.Message">Check if you provided the correct token and if you have an internet connection.</s:String>-->
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.Refresh.None">Para actualizar la autorización para esta aplicación, primero debe finalizar el proceso de autorización.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Info.NotAuthorized">No autorizado.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Info.Expired">La autorización expiro hace {0}.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Info.Valid">Autorización válida hasta {0}.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Info.Removed">Autorización imgur eliminada.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Warning.AlbumLoad">No fue posible cargar la lista de álbumes.</s:String>
     <s:String x:Key="S.Options.Upload.Gfycat.Anonymous">Gfycat (Anónimo)</s:String>
     <s:String x:Key="S.Options.Upload.Yandex.Token">Token de OAuth:</s:String>
     <s:String x:Key="S.Options.Upload.Pick.Destination">Elegir un destino</s:String>
@@ -629,7 +629,7 @@
     <s:String x:Key="S.InsertFrames.ImageSize">Tamaño de imagen:</s:String>
     <s:String x:Key="S.InsertFrames.ImagePosition">Posición de imagen:</s:String>
     <s:String x:Key="S.InsertFrames.ResetImageSizePosition">Reiniciar Tamaño de Imagen&#x0d;Y posición</s:String>
-    <s:String x:Key="S.InsertFrames.Info2">Nuevos fotogramas seran insertados dentro de la actual lista de fotogramas en la posición:</s:String>
+    <s:String x:Key="S.InsertFrames.Info2">Nuevos fotogramas seran insertados dentro de&#10;la actual lista de fotogramas en la posición:</s:String>
     <s:String x:Key="S.InsertFrames.Before">Antes</s:String>
     <s:String x:Key="S.InsertFrames.After">Después</s:String>
     <s:String x:Key="S.InsertFrames.Frame">Fotograma</s:String>
@@ -755,19 +755,19 @@
     <s:String x:Key="S.Editor.Welcome.Size">La velocidad baja de fotogramas, el recuento de colores o la cantidad de cambios entre fotogramas, menor será el tamaño.</s:String>
     <s:String x:Key="S.Editor.Welcome.Contact">¿Quieres hablar? Abra "Opciones > Acerca de" para los métodos de contacto.</s:String>
     <s:String x:Key="S.Editor.Welcome.Trouble">¿Teniendo problemas? Ponte en contacto conmigo a través de la herramienta Comentarios.</s:String>
-    <s:String x:Key="S.Editor.Welcome.NewRecorder">¿Te gustaria probar la nueva grabadora?, Ve a "Opciones > Aplicación", para activarlo.</s:String>
+    <s:String x:Key="S.Editor.Welcome.NewRecorder">¿Te gustaria probar la nueva grabadora?, Ve a "Opciones > Grabador", para activarlo.</s:String>
     
     <!--Editor • File tab • New-->
-    <s:String x:Key="S.Editor.File.New.Recording">Grabando</s:String>
-    <s:String x:Key="S.Editor.File.New.Webcam">Webcam&#x0d;Grabando</s:String>
-    <s:String x:Key="S.Editor.File.New.Board">Pizarra&#x0d;Grabando</s:String>
+    <s:String x:Key="S.Editor.File.New.Recording">Grabación</s:String>
+    <s:String x:Key="S.Editor.File.New.Webcam">Grabación de&#x0d;Webcam</s:String>
+    <s:String x:Key="S.Editor.File.New.Board">Grabación de&#x0d;Pizarra</s:String>
     <s:String x:Key="S.Editor.File.Blank">En Blanco</s:String>
     <s:String x:Key="S.Editor.File.New">Nuevo</s:String>
     
     <!--Editor • File tab • Insert-->
-    <s:String x:Key="S.Editor.File.Insert.Recording">Grabando</s:String>
-    <s:String x:Key="S.Editor.File.Insert.Webcam">Webcam&#x0d;Grabando</s:String>
-    <s:String x:Key="S.Editor.File.Insert.Board">Pizarra&#x0d;Grabando</s:String>
+    <s:String x:Key="S.Editor.File.Insert.Recording">Grabación</s:String>
+    <s:String x:Key="S.Editor.File.Insert.Webcam">Grabación de&#x0d;Webcam</s:String>
+    <s:String x:Key="S.Editor.File.Insert.Board">Grabación de&#x0d;Pizarra</s:String>
     <s:String x:Key="S.Editor.File.Insert.Media">Media</s:String>
     <s:String x:Key="S.Editor.File.Insert">Insertar</s:String>
     
@@ -944,7 +944,7 @@
     <s:String x:Key="S.Editor.DiscardingFrames">Descartar Fotogramas</s:String>
     <s:String x:Key="S.Editor.DiscardingFolders">Descartar Carpetas</s:String>
     <s:String x:Key="S.Editor.ResizingFrames">Redimensionar los Fotogramas</s:String>
-    <s:String x:Key="S.Editor.CroppingFrames">Recortango fotogramas</s:String>
+    <s:String x:Key="S.Editor.CroppingFrames">Recortando fotogramas</s:String>
     <s:String x:Key="S.Editor.ApplyingOverlay">Aplicar Superposición de Fotogramas</s:String>
     <s:String x:Key="S.Editor.CreatingTitleFrame">Crear un Titulo en el Fotograma</s:String>
     <s:String x:Key="S.Editor.ApplyingFlipRotate">Aplicar Rotar los Fotogramas.</s:String>
@@ -1145,7 +1145,7 @@
     <s:String x:Key="S.Shapes.Fill">Relleno</s:String>
 
     <!--Editor • Mouse clicks-->
-    <s:String x:Key="S.MouseClicks">Clicks de Raton</s:String>
+    <s:String x:Key="S.MouseEvents">Clicks de Raton</s:String>
     <s:String x:Key="S.MouseClicks.Warning.None">No se detectan clics con el ratón en el proyecto.</s:String>
     
     <!--Editor • Watermark-->
@@ -1271,7 +1271,7 @@
     <!--<s:String x:Key="S.SaveAs.GifOptions.GlobalColorTable">Use a global color table.</s:String>-->
     <!--<s:String x:Key="S.SaveAs.GifOptions.GlobalColorTable.Info">May reduce the quality and/or size of the gif.</s:String>-->
     <s:String x:Key="S.SaveAs.GifOptions.Loop">Bucle:</s:String>
-    <s:String x:Key="S.SaveAs.GifOptions.LoopedGif">Gif en bucle.</s:String>
+    <s:String x:Key="S.SaveAs.GifOptions.Looped">Gif en bucle.</s:String>
     <s:String x:Key="S.SaveAs.GifOptions.RepeatForever">Repetir para siempre.</s:String>
     <s:String x:Key="S.SaveAs.GifOptions.RepeatCount">Repetir conteo.</s:String>
     <!--<s:String x:Key="S.SaveAs.GifOptions.Transparency.Enable">Enable transparency.</s:String>-->
@@ -1298,9 +1298,9 @@
     <s:String x:Key="S.SaveAs.ImageOptions.Zip">Zip las imagenes.</s:String>
     <s:String x:Key="S.SaveAs.PsdOptions">Opciones psd</s:String>
     <s:String x:Key="S.SaveAs.PsdOptions.Compress">Comprima la imagen.</s:String>
-    <s:String x:Key="S.SaveAs.PsdOptions.Compress.Tooltip">Comprima los datos de imagen utilizando el algoritmo RLE.</s:String>
+    <s:String x:Key="S.SaveAs.PsdOptions.Compress.Info">Comprima los datos de imagen utilizando el algoritmo RLE.</s:String>
     <s:String x:Key="S.SaveAs.PsdOptions.Timeline">Guarde los datos de la línea de tiempo.</s:String>
-    <s:String x:Key="S.SaveAs.PsdOptions.Timeline.Tooltip">Exporta los tiempos de los fotogramas, en lugar de solo los fotogramas.</s:String>
+    <s:String x:Key="S.SaveAs.PsdOptions.Timeline.Info">Exporta los tiempos de los fotogramas, en lugar de solo los fotogramas.</s:String>
     <s:String x:Key="S.SaveAs.ProjectOptions">Opciones de proyecto</s:String>
     
     <s:String x:Key="S.SaveAs.Extras">Extras:</s:String>
@@ -1363,9 +1363,9 @@
     <s:String x:Key="S.SaveAs.Warning.Canceled">La operación fue cancelada.</s:String>
     
     <!--SaveAs • Export-->
-    <s:String x:Key="S.SaveAs.Frames.Confirmation.Title">Exportar fotogramas</s:String>
-    <s:String x:Key="S.SaveAs.Frames.Confirmation.Instruction">¿Estas seguro de querer exportar los fotogramas?</s:String>
-    <s:String x:Key="S.SaveAs.Frames.Confirmation.Message">Esta acción exportara {0} fotogramas directamente en la carpeta seleccionada</s:String>
+    <s:String x:Key="S.SaveAs.Dialogs.Multiple.Title">Exportar fotogramas</s:String>
+    <s:String x:Key="S.SaveAs.Dialogs.Multiple.Instruction">¿Estas seguro de querer exportar los fotogramas?</s:String>
+    <s:String x:Key="S.SaveAs.Dialogs.Multiple.Message">Esta acción exportara {0} fotogramas directamente en la carpeta seleccionada</s:String>
     
     <!--Feedback-->
     <s:String x:Key="S.Feedback.Feedback">Comentarios</s:String>

@@ -1,12 +1,12 @@
-﻿<UserControl x:Class="ScreenToGif.UserControls.KeyStrokesPanel"
+<UserControl x:Class="ScreenToGif.UserControls.KeyStrokesPanel"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:n="clr-namespace:ScreenToGif.Controls"
-             xmlns:u="clr-namespace:ScreenToGif.Util"
              xmlns:cm="clr-namespace:System.ComponentModel;assembly=WindowsBase"
-             xmlns:c="clr-namespace:ScreenToGif.Util.Converters"
+             xmlns:c="clr-namespace:ScreenToGif.Util.Converters;assembly=ScreenToGif.Util"
+             xmlns:t="clr-namespace:ScreenToGif.Util.Settings;assembly=ScreenToGif.Util"
              mc:Ignorable="d" d:DesignHeight="400" d:DesignWidth="300"
              SnapsToDevicePixels="True">
     
@@ -34,7 +34,7 @@
             </DataTemplate>
         </Grid.Resources>
         
-        <Expander Grid.Row="0" Header="{DynamicResource S.KeyStrokes.Keys}" IsExpanded="{Binding IsKeyStrokesKeysExpanded, Source={x:Static u:UserSettings.All}}">
+        <Expander Grid.Row="0" Header="{DynamicResource S.KeyStrokes.Keys}" IsExpanded="{Binding IsKeyStrokesKeysExpanded, Source={x:Static t:UserSettings.All}}">
             <Grid Margin="10,0,0,0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
@@ -83,7 +83,7 @@
             </Grid>
         </Expander>
 
-        <Expander Grid.Row="1" Header="{DynamicResource S.Caption.Font}" IsExpanded="{Binding IsKeyStrokesFontExpanded, Source={x:Static u:UserSettings.All}}">
+        <Expander Grid.Row="1" Header="{DynamicResource S.Caption.Font}" IsExpanded="{Binding IsKeyStrokesFontExpanded, Source={x:Static t:UserSettings.All}}">
             <Grid Margin="10,0,0,0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
@@ -166,7 +166,7 @@
             </Grid>
         </Expander>
 
-        <Expander Grid.Row="2" Header="{DynamicResource S.Caption.Outline}" IsExpanded="{Binding IsKeyStrokesOutlineExpanded, Source={x:Static u:UserSettings.All}}">
+        <Expander Grid.Row="2" Header="{DynamicResource S.Caption.Outline}" IsExpanded="{Binding IsKeyStrokesOutlineExpanded, Source={x:Static t:UserSettings.All}}">
             <Grid Margin="10,0,0,0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
@@ -191,7 +191,7 @@
             </Grid>
         </Expander>
 
-        <Expander Grid.Row="3" Header="{DynamicResource S.Caption.Layout}" IsExpanded="{Binding IsKeyStrokesLayoutExpanded, Source={x:Static u:UserSettings.All}}">
+        <Expander Grid.Row="3" Header="{DynamicResource S.Caption.Layout}" IsExpanded="{Binding IsKeyStrokesLayoutExpanded, Source={x:Static t:UserSettings.All}}">
             <Grid Margin="10,0,0,0">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>

@@ -1,4 +1,4 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:s="clr-namespace:System;assembly=mscorlib"
                     xml:space="preserve">
@@ -99,7 +99,7 @@
     <!--<s:String x:Key="S.Command.KeyStrokes">Inserts keys pressed during the recording</s:String>-->
     <!--<s:String x:Key="S.Command.FreeDrawing">Draw free forms</s:String>-->
     <!--<s:String x:Key="S.Command.Shapes">Add shapes</s:String>-->
-    <!--<s:String x:Key="S.Command.MouseClicks">Mouse clicks</s:String>-->
+    <!--<s:String x:Key="S.Command.MouseEvents">Mouse clicks</s:String>-->
     <!--<s:String x:Key="S.Command.Watermark">Select an image and add as watermark</s:String>-->
     <!--<s:String x:Key="S.Command.Border">Add borders</s:String>-->
     <!--<s:String x:Key="S.Command.Shadow">Add drop shadow</s:String>-->
@@ -132,7 +132,7 @@
     <s:String x:Key="S.StartUp.Editor">Chỉnh sửa</s:String>
     <s:String x:Key="S.StartUp.Editor.Tooltip">Mở cửa sổ chỉnh sửa, trung tâm của ứng dụng này, nơi bạn có thể bắt đầu và chỉnh sửa quay màn hình mới.</s:String>
     <s:String x:Key="S.StartUp.Options">Các tùy chọn</s:String>
-    <s:String x:Key="S.StartUp.NewRelease">Phát hành mới đã sẵn sàng • {0}</s:String>
+    <s:String x:Key="S.StartUp.NewRelease">Phát hành mới đã sẵn sàng</s:String>
     <s:String x:Key="S.StartUp.NewRelease.Tooltip">Tải về phiên bản mới nhất của ScreenToGif.</s:String>
 
     <!--Updater-->
@@ -156,7 +156,7 @@
     <!--Options-->
     <s:String x:Key="S.Options.Title">ScreenToGif - Các tùy chọn</s:String>
     <s:String x:Key="S.Options.App">Ứng dụng</s:String>
-    <!--<s:String x:Key="S.Options.Recorder">Recorder</s:String>-->
+    <s:String x:Key="S.Options.Recorder">Máy ghi âm</s:String>
     <!--<s:String x:Key="S.Options.Editor">Editor</s:String>-->
     <s:String x:Key="S.Options.Tasks">Tự động hóa các nhiệm vụ</s:String>
     <s:String x:Key="S.Options.Shortcuts">Biểu tượng tắt</s:String>
@@ -247,7 +247,7 @@
     <!--<s:String x:Key="S.Options.Recorder.Frequency.Interval">Each frame will be captured in interval of {0}.</s:String>-->
     
     <!--<s:String x:Key="S.Options.Recorder.Mode">Capture mode</s:String>-->
-    <!--<s:String x:Key="S.Options.Recorder.Bitblt.Info">Use the older capture method, which is slower and may not work capturing games,&#10;but requires no aditional plug-ins.</s:String>-->
+    <!--<s:String x:Key="S.Options.Recorder.Bitblt.Info">Use the older capture method, which is slower and may not work capturing games,&#10;but requires no additional plug-ins.</s:String>-->
     <!--<s:String x:Key="S.Options.Recorder.DirectX.Info">Use the Desktop Duplication API capture method, which is faster and&#10;is able to capture fullscreen games, but requires the SharpDx plug-in and Windows 8 or newer.</s:String>-->
     <!--<s:String x:Key="S.Options.Recorder.File">Save to&#10;file</s:String>-->
     <!--<s:String x:Key="S.Options.Recorder.File.Info">Each frame captured will be saved directly as an image on disk.</s:String>-->
@@ -418,27 +418,27 @@
     <s:String x:Key="S.Options.Upload.Proxy.Password">Mật khẩu:</s:String>
     <s:String x:Key="S.Options.Upload.Get">Nhận thẻ OAuth</s:String>
     <s:String x:Key="S.Options.Upload.PasteToken">Dán thẻ được cho phép tại đây</s:String>
-    <s:String x:Key="S.Options.Upload.Authorize">Cho phép</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Authorize">Cho phép</s:String>
     <s:String x:Key="S.Options.Upload.Refresh">Làm mới</s:String>
     <s:String x:Key="S.Options.Upload.Clear">Xóa</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Anonymous">Imgur (Khuyết danh)</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Direct">Sử dụng liên kết trực tiếp.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Gifv">Nhận các liên kết với tiện ích Gifv thay vì Gif.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.ToAlbum">Tải lên gifs tới 1 album được chọn.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Album">Album:</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.AskMe">Hỏi tôi trước khi tải lên</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Auth.NotPossible">Không thể mở trang để nhận thẻ ủy quyền Imgur.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Auth.Missing">Để đặt trước cho phép của ứng dụng này, bạn cần cung cấp đầy đủ thẻ ủy quyền.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Auth.Completed">Cho phép Imgur hoàn tất.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Auth.Error">Ủy quyền Imgur thất bại. Thử lại sau vài giây hoặc nhận thẻ mới.</s:String>
-    <!--<s:String x:Key="S.Options.Upload.Imgur.Auth.Failed.Header">It was not possible to authorize the app</s:String>-->
-    <!--<s:String x:Key="S.Options.Upload.Imgur.Auth.Failed.Message">Check if you provided the correct token and if you have an internet connection.</s:String>-->
-    <s:String x:Key="S.Options.Upload.Imgur.Refresh.None">Để làm mới cho phép cho ứng dụng này, bạn cần trước tiên kết thúc thực thi cho phép.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.NotAuthorized">Không được cho phép.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Expired">Cho phép hết hạn trong {0}.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Valid">Cho phép không hợp lệ cho tới khi {0}.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Removed">Ủy quyền Imgur bị loại bỏ.</s:String>
-    <s:String x:Key="S.Options.Upload.Imgur.Error.AlbumLoad">Không thể nạp danh sách album.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.Anonymous">Imgur (Khuyết danh)</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Direct">Sử dụng liên kết trực tiếp.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.Gifv">Nhận các liên kết với tiện ích Gifv thay vì Gif.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.ToAlbum">Tải lên gifs tới 1 album được chọn.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.Album">Album:</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.AskMe">Hỏi tôi trước khi tải lên</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.Auth.NotPossible">Không thể mở trang để nhận thẻ ủy quyền Imgur.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Warning.Token">Để đặt trước cho phép của ứng dụng này, bạn cần cung cấp đầy đủ thẻ ủy quyền.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.Auth.Completed">Cho phép Imgur hoàn tất.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.Auth.Error">Ủy quyền Imgur thất bại. Thử lại sau vài giây hoặc nhận thẻ mới.</s:String>
+    <!--<s:String x:Key="S.Options.Upload.Preset.Imgur.Auth.Failed.Header">It was not possible to authorize the app</s:String>-->
+    <!--<s:String x:Key="S.Options.Upload.Preset.Imgur.Auth.Failed.Message">Check if you provided the correct token and if you have an internet connection.</s:String>-->
+    <s:String x:Key="S.Options.Upload.Preset.Imgur.Refresh.None">Để làm mới cho phép cho ứng dụng này, bạn cần trước tiên kết thúc thực thi cho phép.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Info.NotAuthorized">Không được cho phép.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Info.Expired">Cho phép hết hạn trong {0}.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Info.Valid">Cho phép không hợp lệ cho tới khi {0}.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Info.Removed">Ủy quyền Imgur bị loại bỏ.</s:String>
+    <s:String x:Key="S.Options.Upload.Preset.Warning.AlbumLoad">Không thể nạp danh sách album.</s:String>
     <s:String x:Key="S.Options.Upload.Gfycat.Anonymous">Gfycat (Khuyết danh)</s:String>
     <s:String x:Key="S.Options.Upload.Yandex.Token">Thẻ OAuth:</s:String>
     <s:String x:Key="S.Options.Upload.Pick.Destination">Chọn 1 điểm đến</s:String>
@@ -629,7 +629,7 @@
     <s:String x:Key="S.InsertFrames.ImageSize">Kích thước ảnh:</s:String>
     <s:String x:Key="S.InsertFrames.ImagePosition">Vị trí ảnh:</s:String>
     <s:String x:Key="S.InsertFrames.ResetImageSizePosition">Đặt lại kích thước hình ảnh&#x0d;và vị trí</s:String>
-    <s:String x:Key="S.InsertFrames.Info2">Các khung hình mới sẽ được chèn vào vị trí hiện thời của danh sách khung hình:</s:String>
+    <s:String x:Key="S.InsertFrames.Info2">Các khung hình mới sẽ được chèn vào vị&#10;trí hiện thời của danh sách khung hình:</s:String>
     <s:String x:Key="S.InsertFrames.Before">Trước</s:String>
     <s:String x:Key="S.InsertFrames.After">Sau</s:String>
     <s:String x:Key="S.InsertFrames.Frame">Khung hình</s:String>
@@ -755,7 +755,7 @@
     <s:String x:Key="S.Editor.Welcome.Size">Tỉ lệ khung hình thấp hơn, tính toán màu sắc hoặc số lượng thay đổi giữa các khung hình càng bé hơn</s:String>
     <s:String x:Key="S.Editor.Welcome.Contact">Bạn muốn trò chuyện? Mở "Các tùy chọn > Giới thiệu" để chọn các hình thức liên lạc</s:String>
     <s:String x:Key="S.Editor.Welcome.Trouble">Gặp vấn đề? Liên hệ với tôi thông qua công cụ phản hồi</s:String>
-    <s:String x:Key="S.Editor.Welcome.NewRecorder">Bạn muốn thử quay màn hình mới? Đi đến "Tùy chọn > Ứng dụng" để kích hoạt.</s:String>
+    <s:String x:Key="S.Editor.Welcome.NewRecorder">Bạn muốn thử quay màn hình mới? Đi đến "Tùy chọn > Máy ghi âm" để kích hoạt.</s:String>
     
     <!--Editor • File tab • New-->
     <s:String x:Key="S.Editor.File.New.Recording">Quay màn hình</s:String>
@@ -1145,7 +1145,7 @@
     <s:String x:Key="S.Shapes.Fill">Làm đầy</s:String>
 
     <!--Editor • Mouse clicks-->
-    <s:String x:Key="S.MouseClicks">Các click chuột</s:String>
+    <s:String x:Key="S.MouseEvents">Các click chuột</s:String>
     <s:String x:Key="S.MouseClicks.Warning.None">Không có phát hiện click chuột trong dự án của bạn.</s:String>
     
     <!--Editor • Watermark-->
@@ -1271,7 +1271,7 @@
     <!--<s:String x:Key="S.SaveAs.GifOptions.GlobalColorTable">Use a global color table.</s:String>-->
     <!--<s:String x:Key="S.SaveAs.GifOptions.GlobalColorTable.Info">May reduce the quality and/or size of the gif.</s:String>-->
     <s:String x:Key="S.SaveAs.GifOptions.Loop">Lặp:</s:String>
-    <s:String x:Key="S.SaveAs.GifOptions.LoopedGif">Vòng lặp Gif.</s:String>
+    <s:String x:Key="S.SaveAs.GifOptions.Looped">Vòng lặp Gif.</s:String>
     <s:String x:Key="S.SaveAs.GifOptions.RepeatForever">Lặp lại mãi mãi.</s:String>
     <s:String x:Key="S.SaveAs.GifOptions.RepeatCount">Lặp lại số lần.</s:String>
     <!--<s:String x:Key="S.SaveAs.GifOptions.Transparency.Enable">Enable transparency.</s:String>-->
@@ -1298,9 +1298,9 @@
     <s:String x:Key="S.SaveAs.ImageOptions.Zip">Khóa các hình ảnh.</s:String>
     <s:String x:Key="S.SaveAs.PsdOptions">Các tùy chọn Psd</s:String>
     <s:String x:Key="S.SaveAs.PsdOptions.Compress">Nén ảnh.</s:String>
-    <s:String x:Key="S.SaveAs.PsdOptions.Compress.Tooltip">Nén dữ liệu ảnh sử dụng thuật toán RLE.</s:String>
+    <s:String x:Key="S.SaveAs.PsdOptions.Compress.Info">Nén dữ liệu ảnh sử dụng thuật toán RLE.</s:String>
     <s:String x:Key="S.SaveAs.PsdOptions.Timeline">Lưu dữ liệu dòng thời gian.</s:String>
-    <s:String x:Key="S.SaveAs.PsdOptions.Timeline.Tooltip">Xuất thiết đặt thời gian của khung hình, thay vì chỉ khung hình.</s:String>
+    <s:String x:Key="S.SaveAs.PsdOptions.Timeline.Info">Xuất thiết đặt thời gian của khung hình, thay vì chỉ khung hình.</s:String>
     <!--<s:String x:Key="S.SaveAs.ProjectOptions">Project options</s:String>-->
     
     <s:String x:Key="S.SaveAs.Extras">Mục bổ sung:</s:String>
@@ -1363,9 +1363,9 @@
     <s:String x:Key="S.SaveAs.Warning.Canceled">Hành động đã bị hủy bỏ.</s:String>
     
     <!--SaveAs • Export-->
-    <s:String x:Key="S.SaveAs.Frames.Confirmation.Title">Xuất các khung hình</s:String>
-    <s:String x:Key="S.SaveAs.Frames.Confirmation.Instruction">Bạn chắc rằng muốn xuất các khung hình?</s:String>
-    <s:String x:Key="S.SaveAs.Frames.Confirmation.Message">Hành động này sẽ xuất {0} khung hình trực tiếp vào thư mục được chọn.</s:String>
+    <s:String x:Key="S.SaveAs.Dialogs.Multiple.Title">Xuất các khung hình</s:String>
+    <s:String x:Key="S.SaveAs.Dialogs.Multiple.Instruction">Bạn chắc rằng muốn xuất các khung hình?</s:String>
+    <s:String x:Key="S.SaveAs.Dialogs.Multiple.Message">Hành động này sẽ xuất {0} khung hình trực tiếp vào thư mục được chọn.</s:String>
     
     <!--Feedback-->
     <s:String x:Key="S.Feedback.Feedback">Phản hồi</s:String>
